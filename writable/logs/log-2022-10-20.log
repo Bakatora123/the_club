@@ -1,0 +1,80 @@
+CRITICAL - 2022-10-20 20:27:16 --> Call to undefined function App\Controllers\vieasdasw()
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 20:28:21 --> Call to undefined function App\Controllers\vieasdw()
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:16:22 --> Use of undefined constant llave1 - assumed 'llave1' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\Login_vws.php on line 2.
+ 1 APPPATH\Views\Login_vws.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant llave1 - assumed \'llave1\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Views\\Login_vws.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Login_vws.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Login_vws', [], true)
+ 5 APPPATH\Controllers\Login.php(10): view('Login_vws')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:16:46 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 11.
+ 1 APPPATH\Controllers\Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Login.php', 11, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:17:28 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 11.
+ 1 APPPATH\Controllers\Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Login.php', 11, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:17:29 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 11.
+ 1 APPPATH\Controllers\Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Login.php', 11, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:17:29 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 11.
+ 1 APPPATH\Controllers\Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Login.php', 11, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:17:30 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 11.
+ 1 APPPATH\Controllers\Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Login.php', 11, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:17:45 --> Use of undefined constant llave1 - assumed 'llave1' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\Login_vws.php on line 2.
+ 1 APPPATH\Views\Login_vws.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant llave1 - assumed \'llave1\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Views\\Login_vws.php', 2, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Login_vws.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Login_vws', [], true)
+ 5 APPPATH\Controllers\Login.php(11): view('Login_vws', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 21:17:56 --> Use of undefined constant llave1 - assumed 'llave1' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\Login_vws.php on line 2.
+ 1 APPPATH\Views\Login_vws.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant llave1 - assumed \'llave1\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Views\\Login_vws.php', 2, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Login_vws.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('Login_vws', [], true)
+ 5 APPPATH\Controllers\Login.php(11): view('Login_vws', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

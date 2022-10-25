@@ -1,0 +1,552 @@
+CRITICAL - 2022-10-23 10:22:29 --> syntax error, unexpected 'swal2' (T_STRING), expecting ';' or ','
+in APPPATH\Views\socios.php on line 10.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 3 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:26:10 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\The_Club\app\Controllers\Socios.php on line 51
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Socios.php(51): view('edit_socio', null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->editSocio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:27:35 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\The_Club\app\Controllers\Socios.php on line 52
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Socios.php(52): view('edit_socio', null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->editSocio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:28:36 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\The_Club\app\Controllers\Socios.php on line 53
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Socios.php(53): view('edit_socio', null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->editSocio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:08 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\The_Club\app\Controllers\Socios.php on line 53
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Socios.php(53): view('edit_socio', null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->editSocio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:09 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\The_Club\app\Controllers\Socios.php on line 53
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Socios.php(53): view('edit_socio', null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->editSocio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:10 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\The_Club\app\Controllers\Socios.php on line 53
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Socios.php(53): view('edit_socio', null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->editSocio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:13 --> Undefined index: id_socio
+in APPPATH\Views\socios.php on line 37.
+ 1 APPPATH\Views\socios.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_socio', 'APPPATH\\Views\\socios.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:14 --> Undefined index: id_socio
+in APPPATH\Views\socios.php on line 37.
+ 1 APPPATH\Views\socios.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_socio', 'APPPATH\\Views\\socios.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:16 --> Undefined index: id_socio
+in APPPATH\Views\socios.php on line 37.
+ 1 APPPATH\Views\socios.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_socio', 'APPPATH\\Views\\socios.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:20 --> Undefined index: id_socio
+in APPPATH\Views\socios.php on line 37.
+ 1 APPPATH\Views\socios.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_socio', 'APPPATH\\Views\\socios.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:29:52 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:30:01 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:30:16 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:31:15 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:31:55 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:32:18 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:32:24 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:32:40 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:32:41 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:32:41 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:32:41 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 50.
+ 1 APPPATH\Views\socios.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:34:48 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 51.
+ 1 APPPATH\Views\socios.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:34:48 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 51.
+ 1 APPPATH\Views\socios.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:34:49 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 51.
+ 1 APPPATH\Views\socios.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:34:49 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 51.
+ 1 APPPATH\Views\socios.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 11:34:51 --> Undefined index: etd
+in APPPATH\Views\socios.php on line 51.
+ 1 APPPATH\Views\socios.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\socios.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 12:27:21 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Socios.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Socios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Socios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Socios')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Socios')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Socios', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 12:27:32 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Socios.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Socios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Socios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Socios')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Socios')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Socios', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 12:27:34 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Socios.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Socios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Socios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Socios')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Socios')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Socios', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 12:27:35 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Socios.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Socios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Socios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Socios')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Socios')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Socios', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 12:27:52 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Socios.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Socios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Socios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Socios')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Socios')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Socios', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 12:31:43 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1623.
+ 1 SYSTEMPATH\BaseModel.php(708): CodeIgniter\BaseModel->transformDataToArray('1', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('1', false)
+ 3 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert('1', false)
+ 4 APPPATH\Controllers\Socios.php(64): CodeIgniter\BaseModel->save('1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 14:27:46 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+in APPPATH\Views\socios.php on line 57.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 3 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 14:58:46 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Views\socios.php on line 61.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 3 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 15:10:13 --> Undefined variable: tepille
+in APPPATH\Views\socios.php on line 42.
+ 1 APPPATH\Views\socios.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tepille', 'APPPATH\\Views\\socios.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 16:36:34 --> Undefined variable: socio
+in APPPATH\Views\socios.php on line 81.
+ 1 APPPATH\Views\socios.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: socio', 'APPPATH\\Views\\socios.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 16:36:54 --> Undefined variable: socio
+in APPPATH\Views\socios.php on line 81.
+ 1 APPPATH\Views\socios.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: socio', 'APPPATH\\Views\\socios.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 16:36:56 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\The_Club\app\Controllers\Socios.php on line 51
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Socios.php(51): view('edit_socio', null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->editSocio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 16:37:03 --> Undefined variable: socio
+in APPPATH\Views\socios.php on line 81.
+ 1 APPPATH\Views\socios.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: socio', 'APPPATH\\Views\\socios.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\socios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('socios', [], true)
+ 5 APPPATH\Controllers\Socios.php(18): view('socios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:23:05 --> Call to undefined method App\Models\IngresosM::listar
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Ingresos.php(16): CodeIgniter\Model->__call('listar', [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:23:36 --> Undefined variable: ingreso
+in APPPATH\Views\ingresos.php on line 28.
+ 1 APPPATH\Views\ingresos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ingreso', 'APPPATH\\Views\\ingresos.php', 28, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ingresos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ingresos', [], true)
+ 5 APPPATH\Controllers\Ingresos.php(17): view('ingresos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:24:38 --> Undefined variable: ingreso
+in APPPATH\Views\ingresos.php on line 26.
+ 1 APPPATH\Views\ingresos.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ingreso', 'APPPATH\\Views\\ingresos.php', 26, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ingresos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ingresos', [], true)
+ 5 APPPATH\Controllers\Ingresos.php(17): view('ingresos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:24:48 --> Undefined variable: ingresos
+in APPPATH\Views\ingresos.php on line 26.
+ 1 APPPATH\Views\ingresos.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ingresos', 'APPPATH\\Views\\ingresos.php', 26, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ingresos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ingresos', [], true)
+ 5 APPPATH\Controllers\Ingresos.php(17): view('ingresos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:25:50 --> Call to undefined method App\Models\IngresosM::list
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Ingresos.php(16): CodeIgniter\Model->__call('list', [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:25:50 --> Call to undefined method App\Models\IngresosM::list
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Ingresos.php(16): CodeIgniter\Model->__call('list', [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:25:55 --> Call to undefined method App\Models\IngresosM::listar
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Ingresos.php(16): CodeIgniter\Model->__call('listar', [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:26:12 --> Call to undefined method App\Models\IngresosM::listar
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Ingresos.php(16): CodeIgniter\Model->__call('listar', [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:26:13 --> Call to undefined method App\Models\IngresosM::listar
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Ingresos.php(16): CodeIgniter\Model->__call('listar', [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:26:48 --> Undefined index: create_up
+in APPPATH\Views\ingresos.php on line 29.
+ 1 APPPATH\Views\ingresos.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: create_up', 'APPPATH\\Views\\ingresos.php', 29, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ingresos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ingresos', [], true)
+ 5 APPPATH\Controllers\Ingresos.php(18): view('ingresos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:31:29 --> Undefined variable: socio
+in APPPATH\Views\ingresos.php on line 36.
+ 1 APPPATH\Views\ingresos.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: socio', 'APPPATH\\Views\\ingresos.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ingresos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ingresos', [], true)
+ 5 APPPATH\Controllers\Ingresos.php(18): view('ingresos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 17:31:52 --> Undefined variable: socio
+in APPPATH\Views\ingresos.php on line 43.
+ 1 APPPATH\Views\ingresos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: socio', 'APPPATH\\Views\\ingresos.php', 43, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ingresos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ingresos', [], true)
+ 5 APPPATH\Controllers\Ingresos.php(18): view('ingresos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 18:22:26 --> Undefined index: etd
+in APPPATH\Views\ingresos.php on line 61.
+ 1 APPPATH\Views\ingresos.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: etd', 'APPPATH\\Views\\ingresos.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ingresos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('ingresos', [], true)
+ 5 APPPATH\Controllers\Ingresos.php(18): view('ingresos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 18:52:24 --> Undefined index: id_ingreso
+in APPPATH\Controllers\Ingresos.php on line 46.
+ 1 APPPATH\Controllers\Ingresos.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_ingreso', 'APPPATH\\Controllers\\Ingresos.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->editIngreso()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 18:53:19 --> Undefined index: id_ingreso
+in APPPATH\Controllers\Ingresos.php on line 46.
+ 1 APPPATH\Controllers\Ingresos.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_ingreso', 'APPPATH\\Controllers\\Ingresos.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->editIngreso()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 18:53:46 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ','
+in APPPATH\Views\edit_ingreso.php on line 48.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_ingreso', [], true)
+ 3 APPPATH\Controllers\Ingresos.php(47): view('edit_ingreso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->editIngreso()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-23 19:05:30 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Ingresos.php on line 66.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Ingresos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ingresos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ingresos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Ingresos')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Ingresos', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
