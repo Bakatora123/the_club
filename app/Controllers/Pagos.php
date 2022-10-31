@@ -6,20 +6,34 @@ use App\Models\PagosM;
 
 class Pagos extends BaseController
 {
+    public $session = null;
     public function __construct()
     {
         helper('form');
+        $this->session = \Config\Services::session();
     }
     public function index()
     {
         $PagosM = new PagosM();
         $pagos = $PagosM->findAll();
         $pagos = array('pagos' => $pagos);
-        return view('estructura/header') . view('estructura/sidebar') . view('pagos', $pagos) . view('estructura/endbody');;
+        if($this->session->get('user')!= null){
+            var_dump($this->session->get('user')); 
+        return view('estructura/header') . view('estructura/sidebar') . view('pagos', $pagos) . view('estructura/endbody');
+    }else{
+        return view('estructura/header') . view('error');
+    }
+    
     }
     public function addPagos()
     {
-        return view('estructura/header') . view('estructura/sidebar') . view('add_pago') . view('estructura/endbody');;
+        if($this->session->get('user')!= null){
+            var_dump($this->session->get('user')); 
+        return view('estructura/header') . view('estructura/sidebar') . view('add_pago') . view('estructura/endbody');
+        }else{
+            return view('estructura/header') . view('error');
+        }
+        
     }
     public function add()
     {
@@ -44,7 +58,12 @@ class Pagos extends BaseController
     {
         $PagosM = new PagosM();
         $pago = $PagosM->find($_GET['id_pago']);
-        return view('estructura/header') . view('estructura/sidebar') . view('edit_pago', $pago) . view('estructura/endbody');;
+        if ($this->session->get('user') != null) {
+            var_dump($this->session->get('user'));
+            return view('estructura/header') . view('estructura/sidebar') . view('edit_pago', $pago) . view('estructura/endbody');
+        } else {
+            return view('estructura/header') . view('error');
+        }
     }
     public function edit()
     {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/vendors/simple-datatables/style.css">
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/vendors/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/css/pages/auth.css">
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/vendors/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/css/app.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/css/pages/error.css">
     <link rel="shortcut icon" href="<?php echo base_url(); ?>/dist/assets/images/favicon.svg" type="image/x-icon">
 
 

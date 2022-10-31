@@ -5,22 +5,53 @@ namespace App\Controllers;
 use App\Models\GastosM;
 
 class Gastos extends BaseController
-{
+{public $session = null;
+    
     public function __construct()
     {
         helper('form');
+        $this->session = \Config\Services::session();
+       
+
     }
     public function index()
     {
+        //session datos
+        $log=[
+            'rol'=>$this->session->get('rol'),
+            'nombre'=>$this->session->get('nombre'),
+            'apellido'=>$this->session->get('apellido'),
+            'usuario'=>$this->session->get('usuario')
+        ];
+        //Fin datos session
         $GastosM = new GastosM();
         $Gastos = $GastosM->findAll();
         $Gastos = array('Gastos' => $Gastos);
-        return view('estructura/header').view('estructura/sidebar').view('gastos',$Gastos).view('estructura/endbody');
+ if($this->session->get('user')!= null){
+            var_dump($this->session->get('user'));
+        return view('estructura/header').view('estructura/sidebar', $log).view('gastos',$Gastos).view('estructura/endbody');
+    }else{
+        return view('estructura/header') . view('error');
+    }
     }
 
     public function addGasto()
     {
-        return view('estructura/header').view('estructura/sidebar').view('add_gasto').view('estructura/endbody');
+        //session datos
+        $log=[
+            'rol'=>$this->session->get('rol'),
+            'nombre'=>$this->session->get('nombre'),
+            'apellido'=>$this->session->get('apellido'),
+            'usuario'=>$this->session->get('usuario')
+        ];
+        //Fin datos session
+
+         if($this->session->get('user')!= null){
+            var_dump($this->session->get('user'));
+        return view('estructura/header').view('estructura/sidebar',$log).view('add_gasto').view('estructura/endbody');
+    }else{
+        return view('estructura/header') . view('error');
+    }
     }
     public function add()
     {
@@ -42,9 +73,23 @@ class Gastos extends BaseController
     }
     public function editGasto()
     {
+       //session datos
+       $log=[
+        'rol'=>$this->session->get('rol'),
+        'nombre'=>$this->session->get('nombre'),
+        'apellido'=>$this->session->get('apellido'),
+        'usuario'=>$this->session->get('usuario')
+    ];
+    //Fin datos session
+
         $GastosM = new GastosM();
         $gasto = $GastosM->find($_GET['id_gasto']);
-        return view('estructura/header') . view('estructura/sidebar') . view('edit_gasto', $gasto) . view('estructura/endbody');
+ if($this->session->get('user')!= null){
+            var_dump($this->session->get('user'));
+        return view('estructura/header') . view('estructura/sidebar',$log) . view('edit_gasto', $gasto) . view('estructura/endbody');
+    }else{
+        return view('estructura/header') . view('error');
+    }
     }
     public function edit()
     {

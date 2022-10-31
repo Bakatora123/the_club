@@ -5,17 +5,24 @@ namespace App\Controllers;
 use App\Models\UtileriaM;
 
 class Utileria extends BaseController
-{
+{public $session = null;
     public function __construct()
     {
         helper('form');
+        $this->session = \Config\Services::session();
     }
     public function index()
     {
         $UtileriaM = new UtileriaM;
         $articulos = $UtileriaM->findAll();
         $articulos = array('articulos' => $articulos);
-        return view('estructura/header') . view('estructura/sidebar') . view('utileria', $articulos) . view('estructura/endbody');;
+ if($this->session->get('user')!= null){
+            var_dump($this->session->get('user'));
+        return view('estructura/header') . view('estructura/sidebar') . view('utileria', $articulos) . view('estructura/endbody');
+}else{
+        return view('estructura/header') . view('error');
+    }
+    
     }
 
     public function addArticulo()
@@ -27,7 +34,13 @@ class Utileria extends BaseController
             '2'    => 'Locker 2',
         ];
         $options = array('options' => $options);
-        return view('estructura/header') . view('estructura/sidebar') . view('add_articulo', $options) . view('estructura/endbody');;
+ if($this->session->get('user')!= null){
+            var_dump($this->session->get('user'));
+        return view('estructura/header') . view('estructura/sidebar') . view('add_articulo', $options) . view('estructura/endbody');
+       }else{
+        return view('estructura/header') . view('error');
+    }
+     
     }
 
     public function add()
@@ -71,8 +84,13 @@ class Utileria extends BaseController
             '2'    => 'Locker 2'
         );
 
-
-        return view('estructura/header') . view('estructura/sidebar') . view('edit_articulo', $medios) . view('estructura/endbody');;
+ if($this->session->get('user')!= null){
+            var_dump($this->session->get('user'));
+        return view('estructura/header') . view('estructura/sidebar') . view('edit_articulo', $medios) . view('estructura/endbody');
+        }else{
+        return view('estructura/header') . view('error');
+    }
+    
     }
 
     public function edit()

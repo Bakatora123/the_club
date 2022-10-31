@@ -5,7 +5,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="index.html"><img src="<?php echo base_url(); ?>/public/img/logo.png" alt="Logo" srcset=""></a>
+                            <a href="index.html"><img src="<?php echo base_url(); ?>/public/logo/logo-cam.png" alt="The Club" class="w-50"  srcset=""></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -14,9 +14,7 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-title"><?php echo "LA BASE ES".base_url(); ?></li>
-
-                        <li class="sidebar-item">
+                   <li class="sidebar-item">
                             <a href="<?php echo base_url(); ?>/Home" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Inicio</span>
