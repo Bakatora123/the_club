@@ -46,18 +46,27 @@ $routes->post('/Socios/delete', 'Socios::delete');
 
 // Pagos
 $routes->get('/Pagos', 'Pagos::index');
-$routes->get('/Pagos/addPago', 'Pagos::add');
-$routes->get('/Pagos/editPago', 'Pagos::edit');
+$routes->get('/Pagos/addPago', 'Pagos::addPagos');
+$routes->post('/Pagos/add', 'Pagos::add');
+$routes->get('/Pagos/editPago', 'Pagos::editPagos');
+$routes->post('/Pagos/edit', 'Pagos::edit');
+$routes->post('/Pagos/delete', 'Pagos::delete');
 
 // Utileria
 $routes->get('/Utileria', 'Utileria::index');
-$routes->get('/Utileria/addArticulo', 'Utileria::add');
-$routes->get('/Utileria/editArticulo', 'Utileria::edit');
+$routes->get('/Utileria/addArticulo', 'Utileria::addArticulo');
+$routes->post('/Utileria/add', 'Utileria::add');
+$routes->get('/Utileria/editArticulo', 'Utileria::editArticulo');
+$routes->post('/Utileria/edit', 'Utileria::edit');
+$routes->post('/Utileria/delete', 'Utileria::delete');
 
 // Gastos
 $routes->get('/Gastos', 'Gastos::index');
-$routes->get('/Gastos/addGasto', 'Gastos::add');
-$routes->get('/Gastos/editGasto', 'Gastos::edit');
+$routes->get('/Gastos/addGasto', 'Gastos::addGasto');
+$routes->post('/Gastos/add', 'Gastos::add');
+$routes->get('/Gastos/editGasto', 'Gastos::editGasto');
+$routes->post('/Gastos/edit', 'Gastos::edit');
+$routes->post('/Gastos/delete', 'Gastos::delete');
 
 // Ingresos
 $routes->get('/Ingresos', 'Ingresos::index');

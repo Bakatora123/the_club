@@ -36,7 +36,7 @@ use function PHPSTORM_META\type;
                                             <?php echo form_label('Fecha') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'detalles', 'class' => 'form-control', 'type'=>'date')); ?>
+                                            <?php echo form_input(array('name' => 'fecha', 'class' => 'form-control', 'type'=>'date')); ?>
                                         </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Detalles') ?>

@@ -29,7 +29,7 @@
                         <tbody>
                             <?php foreach ($socios as $socio) { ?>
                                 <tr>
-                                    <td><?php echo $socio['Id_socio']; ?></td>
+                                    
                                     <td><?php echo $socio['nombre']; ?></td>
                                     <td><?php echo $socio['apellido']; ?></td>
                                     <td><?php echo $socio['documento']; ?></td>

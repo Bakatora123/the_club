@@ -25,23 +25,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($ingresos as $ingreso) { ?>
+                                <?php foreach ($Gastos as $gasto) {  ?>
                                 <tr>
-                                    <td><?php echo $ingreso['monto'] ?></td>
-                                    <td><?php echo $ingreso['fecha'] ?></td>
-                                    <td><?php echo $ingreso['detalles'] ?></td>
+                                    <td><?php echo $gasto['monto'] ?></td>
+                                    <td><?php echo $gasto['fecha'] ?></td>
+                                    <td><?php echo $gasto['detalles'] ?></td>
                                     <td>
 
                                         <?php
-                                        echo form_open('/Ingresos/delete');
-                                        echo form_input(array('name' => 'id_gasto', 'type' => 'hidden', 'value' => $ingreso['id_ingreso']));
+                                        echo form_open('/Gastos/delete');
+                                        echo form_input(array('name' => 'id_gasto', 'type' => 'hidden', 'value' => $gasto['id_gasto']));
                                         //echo form_submit(array('name' => 'Cargar', 'value' => 'Eliminar', 'class' => 'badge bg-danger', 'onclick' => 'return confirm()'));
                                         ?>
                                         <button class="badge bg-danger" style="border-width: 0 ;" onclick="return confirm()">Eliminar</button>
                                         <?php
                                         echo form_close();
                                         ?>
-                                        <a href="<?php echo base_url(); ?>/Ingresos/editIngreso?id_ingreso=<?php echo $ingreso['id_gasto']; ?>" class="badge bg-success">Modificar</span>
+                                        <a href="<?php echo base_url(); ?>/Gastos/editGasto?id_gasto=<?php echo $gasto['id_gasto']; ?>" class="badge bg-success">Modificar</span>
 
                                     </td>
                                 </tr>

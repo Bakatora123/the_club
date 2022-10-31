@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class GastosM extends Model
+class PagosM extends Model
 {
-    protected $table      = 'gasto';
-    protected $primaryKey = 'id_gasto';
+    protected $table      = 'socio_pago';
+    protected $primaryKey = 'id_pago';
 
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['monto','detalles','fecha'];
+    protected $allowedFields = ['doc_encargado', 'doc_socio','monto','fecha'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

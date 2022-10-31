@@ -1,0 +1,22 @@
+CRITICAL - 2022-10-27 06:28:55 --> Undefined variable: ingresos
+in APPPATH\Views\gastos.php on line 28.
+ 1 APPPATH\Views\gastos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ingresos', 'APPPATH\\Views\\gastos.php', 28, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gastos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('gastos', [], true)
+ 5 APPPATH\Controllers\Gastos.php(9): view('gastos')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Gastos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gastos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 06:29:43 --> Undefined variable: ingresos
+in APPPATH\Views\gastos.php on line 28.
+ 1 APPPATH\Views\gastos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ingresos', 'APPPATH\\Views\\gastos.php', 28, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gastos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('gastos', [], true)
+ 5 APPPATH\Controllers\Gastos.php(9): view('gastos')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Gastos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gastos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -8,7 +8,6 @@
         </div>
     </header>
     <div id="main-content">
-        
         <section id="section">
             <div class="row match-height">
                 <div class=" col-12">
@@ -19,9 +18,7 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <?php
-
                                 echo form_open('/Socios/add', array('class' => 'form form-horizontal')) ?>
-
                                 <div class="form-body">
                                     <div class="row text-center">
                                         <div class="col-md-6 ">
@@ -48,7 +45,6 @@
 
                                         <div class="col-sm-12 d-flex justify-content-center mt-5">
                                             <?php echo form_submit(array('name' => 'Cargar', 'value' => 'Cargar', 'class' => 'btn btn-primary me-1 mb-1')); ?>
-
                                         </div>
                                     </div>
                                 </div>
