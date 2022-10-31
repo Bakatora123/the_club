@@ -2,13 +2,55 @@
 
 namespace App\Controllers;
 
+use App\Models\UsuariosM;
 
 class Login extends BaseController
 {
+    public $session = null;
+    public function __construct()
+    {
+        helper('form');
+        $this->session = \Config\Services::session();
+    }
     public function index()
     {
 
-        return view('login');
-    } 
+       
+
+       
+        return view('estructura/header').view('login').view('estructura/endbody');
+    }
+    public function aute()
+    {
+        $UsuariosM = new UsuariosM;
+        $request = \Config\Services::request();
+        $login = array(
+            'name' => $request->getPostGet('name'),
+            'pass' => $request->getPostGet('pass'),
+
+        );
+
+
+        $buscar = [
+            'pass' => $request->getPostGet('pass'),
+            'user' => $request->getPostGet('name')
+        ];
+
+        if ($UsuariosM->where($buscar)->first() == true) {
+            $login =  $UsuariosM->where($buscar)->first();
+            $this->session->set($login);
+           
+        } else {
+             return view('estructura/header').view('login'); 
+        }
+        // if($login['name'] == 'admin' && $login['pass'] == '123456'){
+
+    }
+    public function cerrar()
+    {
+        $this->session->destroy();
+        header("Location:".base_url()."/Login?est=true");
+            exit();
+    }
 
 }

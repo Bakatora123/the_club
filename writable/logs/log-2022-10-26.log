@@ -1,0 +1,95 @@
+ERROR - 2022-10-26 13:21:45 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'the_club' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'the_club', 3306, '', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\The_Club\app\Controllers\Socios.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Socios->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'the_club' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\The_Club\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\The_Club\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\The_Club\app\Controllers\Socios.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Socios->index()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-26 13:21:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'the_club'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio`
+WHERE `socio`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Socios.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 13:23:52 --> Undefined variable: ingresos
+in APPPATH\Views\gastos.php on line 28.
+ 1 APPPATH\Views\gastos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ingresos', 'APPPATH\\Views\\gastos.php', 28, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\gastos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('gastos', [], true)
+ 5 APPPATH\Controllers\Gastos.php(9): view('gastos')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Gastos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gastos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 13:23:57 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'the_club' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'the_club', 3306, '', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\The_Club\app\Controllers\Ingresos.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'the_club' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\The_Club\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\The_Club\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\The_Club\app\Controllers\Ingresos.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-26 13:23:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'the_club'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ingreso`
+WHERE `ingreso`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Ingresos.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Ingresos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingresos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

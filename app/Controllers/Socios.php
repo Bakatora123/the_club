@@ -6,9 +6,11 @@ use App\Models\SociosM;
 
 class Socios extends BaseController
 {
-    public function __construct()
+    public $session = null;
+     public function __construct()
     {
         helper('form');
+        $this->session = \Config\Services::session();
     }
     public function index()
     {

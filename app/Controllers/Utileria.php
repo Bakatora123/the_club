@@ -5,10 +5,11 @@ namespace App\Controllers;
 use App\Models\UtileriaM;
 
 class Utileria extends BaseController
-{
+{public $session = null;
     public function __construct()
     {
         helper('form');
+        $this->session = \Config\Services::session();
     }
     public function index()
     {
