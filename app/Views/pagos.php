@@ -10,7 +10,9 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <p class="card-title">Lista de Pagos</p>
+                            <?php if($usuario['rol']==2){ ?>
                             <a href="<?php echo base_url(); ?>/Pagos/addPago" class="btn btn-primary">Agregar Pago</a>
+                            <?php }?>
                         </div>
                         <hr>
                         <div class="card-body">

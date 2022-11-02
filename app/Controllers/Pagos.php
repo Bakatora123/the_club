@@ -19,10 +19,12 @@ class Pagos extends BaseController
 
         $PagosM = new PagosM();
         $pagos = $PagosM->findAll();
-        $pagos = array('pagos' => $pagos);
+        $usuario= ['rol'=>$this->session->get('rol')];
+        $pagos = array('pagos' => $pagos, 'usuario' => $usuario);
         if ($this->session->get('user') != null) {
-
-            return view('estructura/header') . view('estructura/sidebar') . view('pagos', $pagos) . view('estructura/endbody');
+            $usuario= ['rol'=>$this->session->get('rol')];
+            var_dump($usuario);
+            return view('estructura/header').view('estructura/sidebar',$usuario).view('pagos',$pagos).view('estructura/endbody');
         } else {
             return view('estructura/header') . view('error');
         }

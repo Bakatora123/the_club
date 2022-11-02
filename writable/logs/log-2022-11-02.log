@@ -1,0 +1,240 @@
+CRITICAL - 2022-11-02 08:30:48 --> Argument 2 passed to view() must be of the type array, string given, called in C:\wamp64\www\The_Club\app\Controllers\Pagos.php on line 25
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Pagos.php(25): view('estructura/sidebar', 'baka')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:31:19 --> Argument 2 passed to view() must be of the type array, string given, called in C:\wamp64\www\The_Club\app\Controllers\Pagos.php on line 25
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Pagos.php(25): view('estructura/sidebar', 'baka')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:31:53 --> Argument 2 passed to view() must be of the type array, string given, called in C:\wamp64\www\The_Club\app\Controllers\Pagos.php on line 25
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Pagos.php(25): view('estructura/sidebar', 'baka')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:32:11 --> Argument 2 passed to view() must be of the type array, string given, called in C:\wamp64\www\The_Club\app\Controllers\Pagos.php on line 25
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Pagos.php(25): view('estructura/sidebar', '2')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:32:31 --> Argument 2 passed to view() must be of the type array, string given, called in C:\wamp64\www\The_Club\app\Controllers\Pagos.php on line 26
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Pagos.php(26): view('estructura/sidebar', '2')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:34:30 --> Undefined index: doc_encargado
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: doc_encargado', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(27): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:35:20 --> Undefined index: doc_encargado
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: doc_encargado', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(28): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:36:37 --> Argument 2 passed to view() must be of the type array, string given, called in C:\wamp64\www\The_Club\app\Controllers\Pagos.php on line 25
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Pagos.php(25): view('estructura/sidebar', 'baka')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:37:21 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(25): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:37:53 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:38:18 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:38:21 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:38:27 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:45 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:46 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:46 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:47 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:47 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:48 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:48 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:48 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:48 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:39:49 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 08:40:38 --> Undefined variable: usuario
+in APPPATH\Views\pagos.php on line 13.
+ 1 APPPATH\Views\pagos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\pagos.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(26): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
