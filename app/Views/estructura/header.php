@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/css/app.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/css/pages/error.css">
     <link rel="shortcut icon" href="<?php echo base_url(); ?>/dist/assets/images/favicon.svg" type="image/x-icon">
-
+    
 
 </head>
 

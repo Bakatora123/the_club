@@ -11,6 +11,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-12 mt-3 order-md-1 order-last text-center">
                                     <h1>Bienvenido</h1>
+                                    <p><?php echo $nombre. " ". $apellido ?></p>
                                 </div>
                             </div>
                         </div>

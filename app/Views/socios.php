@@ -39,7 +39,8 @@
                                         <?php
                                         echo form_open('/Socios/delete');
                                         echo form_input(array('name' => 'Id_socio', 'type' => 'hidden', 'value' => $socio['Id_socio']));
-                                        //echo form_submit(array('name' => 'Cargar', 'value' => 'Eliminar', 'class' => 'badge bg-success', 'onclick' => 'return confirm()'));
+                                        $js = ['onClick' => 'return confirm();'];
+                                        //echo form_submit(array('name' => 'Cargar', 'value' => 'Eliminar', 'class' => 'badge bg-success'));
                                         ?>
                                         <button class="badge bg-danger" style="border-width: 0 ;" onclick="return confirm()">Eliminar</button>
                                         <?php

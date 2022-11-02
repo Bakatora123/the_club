@@ -28,7 +28,7 @@ class Gastos extends BaseController
         $Gastos = $GastosM->findAll();
         $Gastos = array('Gastos' => $Gastos);
  if($this->session->get('user')!= null){
-            var_dump($this->session->get('user'));
+           
         return view('estructura/header').view('estructura/sidebar', $log).view('gastos',$Gastos).view('estructura/endbody');
     }else{
         return view('estructura/header') . view('error');
@@ -47,7 +47,7 @@ class Gastos extends BaseController
         //Fin datos session
 
          if($this->session->get('user')!= null){
-            var_dump($this->session->get('user'));
+           
         return view('estructura/header').view('estructura/sidebar',$log).view('add_gasto').view('estructura/endbody');
     }else{
         return view('estructura/header') . view('error');
@@ -85,7 +85,7 @@ class Gastos extends BaseController
         $GastosM = new GastosM();
         $gasto = $GastosM->find($_GET['id_gasto']);
  if($this->session->get('user')!= null){
-            var_dump($this->session->get('user'));
+           
         return view('estructura/header') . view('estructura/sidebar',$log) . view('edit_gasto', $gasto) . view('estructura/endbody');
     }else{
         return view('estructura/header') . view('error');

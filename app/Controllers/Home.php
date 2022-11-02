@@ -14,11 +14,13 @@ class Home extends BaseController
     }
     public function index()
     { 
-
-        var_dump($this->session->get('user'));
         if($this->session->get('user')!= null){
-            var_dump($this->session->get('user')); 
-        return view('estructura/header').view('estructura/sidebar').view('index').view('estructura/endbody');
+            $user=[
+                'nombre'=>$this->session->get('nombre'),
+                'apellido'=>$this->session->get('apellido')
+             ];
+             
+        return view('estructura/header').view('estructura/sidebar').view('index',$user).view('estructura/endbody');
     }else{
         return view('estructura/header').view('error');
     }

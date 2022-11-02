@@ -18,7 +18,7 @@ class Ingresos extends BaseController
         $ingresos = $ingresosM->findAll();
         $ingresos = array('ingresos'=>$ingresos);
         if($this->session->get('user')!= null){
-           var_dump($this->session->get('user')); 
+           
         return view('estructura/header').view('estructura/sidebar').view('ingresos',$ingresos).view('estructura/endbody');
         }else{
             return view('estructura/header').view('error');
@@ -28,7 +28,7 @@ class Ingresos extends BaseController
     public function addIngreso()
     {
         if($this->session->get('user')!= null){
-            var_dump($this->session->get('user')); 
+            
         return view('estructura/header').view('estructura/sidebar').view('add_ingreso').view('estructura/endbody');
     }else{
         return view('estructura/header').view('error');
@@ -57,11 +57,9 @@ class Ingresos extends BaseController
         $ingresosM= new IngresosM();
         $ingreso= $ingresosM->find($_GET['id_ingreso']);
         if($this->session->get('user')!= null){
-            var_dump($this->session->get('user')); 
+            
         return view('estructura/header').view('estructura/sidebar').view('edit_ingreso',$ingreso).view('estructura/endbody');
-    }else{
-        return view('estructura/header').view('error');
-    }
+        }
     }
     public function edit()
         {

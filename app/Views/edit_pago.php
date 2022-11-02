@@ -26,24 +26,24 @@
                                             <?php echo form_label('Encargado') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'doc_encargado', 'class' => 'form-control', 'type' => 'text','value'=>$doc_encargado)); ?>
+                                            <?php echo form_input(array('name' => 'doc_encargado', 'class' => 'form-control', 'type' => 'text','value'=>$pago['doc_encargado'])); ?>
                                         </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Socio') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'doc_socio', 'class' => 'form-control', 'type' => 'text','value'=>$doc_socio)); ?> </div>
+                                            <?php echo form_input(array('name' => 'doc_socio', 'class' => 'form-control', 'type' => 'text','value'=>$pago['doc_socio'])); ?> </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Monto') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'monto', 'class' => 'form-control', 'type' => 'number','value'=>$monto)); ?> </div>
+                                            <?php echo form_input(array('name' => 'monto', 'class' => 'form-control', 'type' => 'number','value'=>$pago['monto'])); ?> </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Fecha') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'fecha', 'class' => 'form-control', 'type' => 'date','value'=>$fecha)); ?> </div>
-                                            <?php echo form_input(array('name' => 'id_pago', 'type' => 'hidden', 'value'=>$id_pago)); ?> 
+                                            <?php echo form_input(array('name' => 'fecha', 'class' => 'form-control', 'type' => 'date','value'=>$pago['fecha'])); ?> </div>
+                                            <?php echo form_input(array('name' => 'id_pago', 'type' => 'hidden', 'value'=>$pago['id_pago'])); ?> 
                                             
                                         <div class="col-sm-12 d-flex justify-content-center mt-5">
                                             <?php echo form_submit(array('name' => 'Cargar', 'value' => 'Cargar', 'class' => 'btn btn-primary me-1 mb-1')); ?>

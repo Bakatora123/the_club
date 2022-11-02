@@ -26,13 +26,37 @@
                                             <?php echo form_label('Encargado') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'doc_encargado', 'class' => 'form-control', 'type' => 'text')); ?>
+                                            <?php
+                                            if ($rol == 2) {
+                                                echo form_input(array('name' => 'doc_encargado', 'class' => 'form-control', 'type' => 'text', 'placeholder' => $nombre, 'readonly' => 'readonly'));
+                                            } else {
+                                            ?>
+                                               <select class="form-select">
+                                                <?php
+                                                foreach ($options as $option) {
+                                                  ?>
+
+                                                  <option value="<?php echo $option['documento']?>"><?php echo $option['nombre']?></option>
+                                                  
+                                            <?php
+                                                
+                                            }
+                                            echo "</select>";
+                                        }
+                                            ?>
+
                                         </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Socio') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'doc_socio', 'class' => 'form-control', 'type' => 'text')); ?> </div>
+                                        <select class="form-select">
+                                                <?php
+                                                foreach ($socios as $socio) { ?>
+                                                  <option value="<?php echo $socio['documento']?>"><?php echo $socio['nombre']?></option>                                                  
+                                                <?php } ?>
+                                        </select>
+                                        </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Monto') ?>
                                         </div>

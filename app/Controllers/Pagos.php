@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\PagosM;
+use App\Models\UsuariosM;
+use App\Models\SociosM;
 
 class Pagos extends BaseController
 {
@@ -14,26 +16,37 @@ class Pagos extends BaseController
     }
     public function index()
     {
+
         $PagosM = new PagosM();
         $pagos = $PagosM->findAll();
         $pagos = array('pagos' => $pagos);
-        if($this->session->get('user')!= null){
-            var_dump($this->session->get('user')); 
-        return view('estructura/header') . view('estructura/sidebar') . view('pagos', $pagos) . view('estructura/endbody');
-    }else{
-        return view('estructura/header') . view('error');
-    }
-    
+        if ($this->session->get('user') != null) {
+
+            return view('estructura/header') . view('estructura/sidebar') . view('pagos', $pagos) . view('estructura/endbody');
+        } else {
+            return view('estructura/header') . view('error');
+        }
     }
     public function addPagos()
     {
-        if($this->session->get('user')!= null){
-            var_dump($this->session->get('user')); 
-        return view('estructura/header') . view('estructura/sidebar') . view('add_pago') . view('estructura/endbody');
-        }else{
+        $UsuariosM = new UsuariosM();
+        $SociosM = new SociosM();
+        if ($this->session->get('user') != null) {
+            $user = [
+                'nombre' => $this->session->get('nombre'),
+                'rol' => $this->session->get('rol')
+            ];
+            $encargados = $UsuariosM->where('rol', 2)->find();
+            $socios = $SociosM->findAll();
+
+            $options = array(
+                'options' => $encargados,
+                'socios' => $socios
+            );
+            return view('estructura/header') . view('estructura/sidebar', $user) . view('add_pago', $options) . view('estructura/endbody');
+        } else {
             return view('estructura/header') . view('error');
         }
-        
     }
     public function add()
     {
@@ -56,11 +69,29 @@ class Pagos extends BaseController
     }
     public function editPagos()
     {
+
+
+
+
+        $UsuariosM = new UsuariosM();
+        $SociosM = new SociosM();
         $PagosM = new PagosM();
         $pago = $PagosM->find($_GET['id_pago']);
         if ($this->session->get('user') != null) {
-            var_dump($this->session->get('user'));
-            return view('estructura/header') . view('estructura/sidebar') . view('edit_pago', $pago) . view('estructura/endbody');
+            $user = [
+                'nombre' => $this->session->get('nombre'),
+                'rol' => $this->session->get('rol')
+            ];
+            $encargados = $UsuariosM->where('rol', 2)->find();
+            $socios = $SociosM->findAll();
+
+            $options = array(
+                'options' => $encargados,
+                'socios' => $socios,
+                'pago' =>$pago
+            );
+
+            return view('estructura/header') . view('estructura/sidebar',$user) . view('edit_pago', $options) . view('estructura/endbody');
         } else {
             return view('estructura/header') . view('error');
         }

@@ -14,11 +14,7 @@ class Login extends BaseController
     }
     public function index()
     {
-
-       
-
-       
-        return view('estructura/header').view('login').view('estructura/endbody');
+        return view('estructura/header') . view('login') . view('estructura/endbody');
     }
     public function aute()
     {
@@ -35,24 +31,20 @@ class Login extends BaseController
             'pass' => $request->getPostGet('pass'),
             'user' => $request->getPostGet('name')
         ];
-
         if ($UsuariosM->where($buscar)->first() == true) {
             $login =  $UsuariosM->where($buscar)->first();
             $this->session->set($login);
-           
+            header("Location:" . base_url() . "/Home");
+            exit();
         } else {
-
-            
-             return view('estructura/header').view('login'); 
+            header("Location:" . base_url() . "/Login");
+            exit();
         }
-        // if($login['name'] == 'admin' && $login['pass'] == '123456'){
-
     }
     public function cerrar()
     {
         $this->session->destroy();
-        header("Location:".base_url()."/Login?est=true");
-            exit();
+        header("Location:" . base_url() . "/Login?est=true");
+        exit();
     }
-
 }

@@ -18,7 +18,7 @@ class Socios extends BaseController
         $socios = $SociosM->findAll();
         $socios = array('socios' => $socios);
         if($this->session->get('user')!= null){
-            var_dump($this->session->get('user'));
+            
         return view('estructura/header') . view('estructura/sidebar') . view('socios', $socios) . view('estructura/endbody');;
         }else{
         return view('estructura/header') . view('error');
@@ -28,7 +28,7 @@ class Socios extends BaseController
     public function addSocio()
     {
         if($this->session->get('user')!= null){
-            var_dump($this->session->get('user'));
+            
         return view('estructura/header') . view('estructura/sidebar') . view('add_socio') . view('estructura/endbody');
         }else{
         return view('estructura/header') . view('error');
@@ -60,7 +60,7 @@ class Socios extends BaseController
         $SociosM = new SociosM();
         $socio = $SociosM->find($_GET['id_socio']);
         if($this->session->get('user')!= null){
-            var_dump($this->session->get('user'));
+            
         return view('estructura/header') . view('estructura/sidebar') . view('edit_socio', $socio) . view('estructura/endbody');
         }else{
         return view('estructura/header') . view('error');
