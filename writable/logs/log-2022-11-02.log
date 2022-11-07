@@ -238,3 +238,1165 @@ in APPPATH\Views\pagos.php on line 13.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:01:53 --> Undefined index: nombre
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(27): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:03:21 --> Undefined index: nombre
+in APPPATH\Views\pagos.php on line 34.
+ 1 APPPATH\Views\pagos.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\pagos.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(27): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:07:02 --> Undefined index: nombre
+in APPPATH\Views\pagos.php on line 34.
+ 1 APPPATH\Views\pagos.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\pagos.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(30): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:13:47 --> mysqli_sql_exception: Column 'doc_socio' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 09:13:47 --> Column 'doc_socio' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (\'\', NULL, \'1233213123\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (\'\', NULL, \'1233213123\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (\'\', NULL, \'1233213123\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (:doc_encargado:, :doc_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(66): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:14:54 --> mysqli_sql_exception: Column 'doc_socio' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 09:14:54 --> Column 'doc_socio' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (\'\', NULL, \'1233213123\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (\'\', NULL, \'1233213123\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (\'\', NULL, \'1233213123\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`doc_encargado`, `doc_socio`, `monto`, `fecha`) VALUES (:doc_encargado:, :doc_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(66): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:21:20 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+in APPPATH\Controllers\Pagos.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pagos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pagos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pagos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Pagos')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Pagos', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:22:12 --> syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+in APPPATH\Views\add_pago.php on line 32.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 3 APPPATH\Controllers\Pagos.php(55): view('add_pago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:22:20 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Views\add_pago.php on line 31.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 3 APPPATH\Controllers\Pagos.php(55): view('add_pago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:24:36 --> Undefined variable: encargados
+in APPPATH\Controllers\Pagos.php on line 29.
+ 1 APPPATH\Controllers\Pagos.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: encargados', 'APPPATH\\Controllers\\Pagos.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:30:01 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:30:01 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:30:16 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:30:16 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:30:17 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:30:17 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:30:39 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:30:39 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = (2,4)
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = (2,4)
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = (2,4)
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:30:45 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:30:45 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = (2)
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = (2)
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = (2)
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:30:50 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:30:50 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:31:43 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:31:43 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:33:02 --> mysqli_sql_exception: Unknown column 'rol' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->index()
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-02 09:33:02 --> Unknown column 'rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `socio_pago`
+WHERE `rol` = 2
+AND `socio_pago`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `socio_pago`
+WHERE `rol` = :rol:
+AND `socio_pago`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Pagos.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:43:39 --> Undefined variable: encargado
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: encargado', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(35): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:44:50 --> Undefined index: documento
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: documento', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(35): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:45:50 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH\Controllers\Pagos.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pagos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pagos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pagos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Pagos')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Pagos', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:46:05 --> Undefined index: documento
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: documento', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:47:27 --> Illegal string offset 'documento'
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'documento\'', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:47:51 --> Illegal string offset 'documento'
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'documento\'', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:51:18 --> Illegal string offset 'id_usuario'
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_usuario\'', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:52:19 --> Undefined variable: NombresE
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: NombresE', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:52:41 --> Undefined index: documento
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: documento', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:56:53 --> Undefined index: doc_socio
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: doc_socio', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:59:21 --> Undefined index: doc_encargado
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: doc_encargado', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:59:44 --> Undefined variable: NombresE
+in APPPATH\Views\pagos.php on line 30.
+ 1 APPPATH\Views\pagos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: NombresE', 'APPPATH\\Views\\pagos.php', 30, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:00:31 --> syntax error, unexpected '}', expecting end of file
+in APPPATH\Views\pagos.php on line 54.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 3 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:00:49 --> Illegal string offset 'documento'
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'documento\'', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:01:03 --> Illegal string offset 'nombresF'
+in APPPATH\Views\pagos.php on line 33.
+ 1 APPPATH\Views\pagos.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nombresF\'', 'APPPATH\\Views\\pagos.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pagos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagos', [], true)
+ 5 APPPATH\Controllers\Pagos.php(39): view('pagos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:39:55 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:42:31 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:43:27 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:43:29 --> Undefined index: id_usuarios
+in APPPATH\Views\add_pago.php on line 40.
+ 1 APPPATH\Views\add_pago.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_usuarios', 'APPPATH\\Views\\add_pago.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(61): view('add_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:43:33 --> Undefined index: id_usuarios
+in APPPATH\Views\add_pago.php on line 40.
+ 1 APPPATH\Views\add_pago.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_usuarios', 'APPPATH\\Views\\add_pago.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(61): view('add_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:44:22 --> Undefined index: id_usuarios
+in APPPATH\Views\add_pago.php on line 40.
+ 1 APPPATH\Views\add_pago.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_usuarios', 'APPPATH\\Views\\add_pago.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(61): view('add_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:44:36 --> Undefined index: id_usuarios
+in APPPATH\Views\add_pago.php on line 40.
+ 1 APPPATH\Views\add_pago.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_usuarios', 'APPPATH\\Views\\add_pago.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(61): view('add_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:44:38 --> Undefined index: id_usuarios
+in APPPATH\Views\add_pago.php on line 40.
+ 1 APPPATH\Views\add_pago.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_usuarios', 'APPPATH\\Views\\add_pago.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(61): view('add_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:45:14 --> Undefined index: id_usuarios
+in APPPATH\Views\add_pago.php on line 40.
+ 1 APPPATH\Views\add_pago.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_usuarios', 'APPPATH\\Views\\add_pago.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('add_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(62): view('add_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->addPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:48:27 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:49:45 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:49:59 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:50:18 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:50:28 --> Call to a member function findColumn() on string
+in APPPATH\Controllers\Pagos.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:50:43 --> Call to a member function find() on string
+in APPPATH\Controllers\Pagos.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:51:09 --> Call to a member function errors() on array
+in APPPATH\Controllers\Pagos.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 10:51:20 --> Call to a member function find() on string
+in APPPATH\Controllers\Pagos.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:06:15 --> mysqli_sql_exception: Unknown column 'Id_socios' in 'where clause' in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nombre`...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nombre`...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nombre`...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nombre`...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\wamp64\www\The_Club\system\Model.php(201): CodeIgniter\BaseModel->find()
+#7 C:\wamp64\www\The_Club\system\BaseModel.php(554): CodeIgniter\Model->doFindColumn('nombre')
+#8 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(74): CodeIgniter\BaseModel->findColumn('nombre')
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#11 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-02 11:06:15 --> Unknown column 'Id_socios' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nombre`
+FROM `socio`
+WHERE `Id_socios` IS NULL
+AND `socio`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nombre`
+FROM `socio`
+WHERE `Id_socios` IS NULL
+AND `socio`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nombre`
+FROM `socio`
+WHERE `Id_socios` IS NULL
+AND `socio`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nombre`
+FROM `socio`
+WHERE `Id_socios` IS NULL
+AND `socio`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 7 SYSTEMPATH\Model.php(201): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\BaseModel.php(554): CodeIgniter\Model->doFindColumn('nombre')
+ 9 APPPATH\Controllers\Pagos.php(74): CodeIgniter\BaseModel->findColumn('nombre')
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:06:45 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:06:45 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:10:54 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:10:54 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:10:55 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:10:55 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 11:11:42 --> syntax error, unexpected ':'
+in APPPATH\Controllers\Pagos.php on line 89.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Pagos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pagos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pagos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Pagos')
+ 5 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\Pagos', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:11:48 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:11:48 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:13:09 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:13:09 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:13:59 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:13:59 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:15:02 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:15:02 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:15:18 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:15:18 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:18:25 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:18:25 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'2\'), (\'encargado\'), NULL, NULL, \'1000\', \'2022-11-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:18:32 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:18:32 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:19:33 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:19:33 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:19:36 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:19:36 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 11:19:42 --> mysqli_sql_exception: Column 'id_socioFK' cannot be null in C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\The_Club\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\wamp64\www\The_Club\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\wamp64\www\The_Club\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\wamp64\www\The_Club\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\The_Club\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\The_Club\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\The_Club\app\Controllers\Pagos.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\The_Club\system\CodeIgniter.php(902): App\Controllers\Pagos->add()
+#9 C:\wamp64\www\The_Club\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\wamp64\www\The_Club\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\The_Club\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 11:19:42 --> Column 'id_socioFK' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES ((\'1\'), (\'Franco Nahuel\'), NULL, NULL, \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `socio_pago` (`id_usuarioFK`, `nombre_encargado`, `id_socioFK`, `nombre_socio`, `monto`, `fecha`) VALUES (:id_usuarioFK:, :nombre_encargado:, :id_socioFK:, :nombre_socio:, :monto:, :fecha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(90): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->add()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

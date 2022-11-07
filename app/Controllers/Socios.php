@@ -18,8 +18,15 @@ class Socios extends BaseController
         $socios = $SociosM->findAll();
         $socios = array('socios' => $socios);
         if($this->session->get('user')!= null){
+            $user=[
+                'nombre'=>$this->session->get('nombre'),
+                'apellido'=>$this->session->get('apellido'),
+                'rol'=>$this->session->get('rol'),
+                'user'=> $this->session->get('user'),
+                'documento'=>$this->session->get('documento'),
+                  ];
             
-        return view('estructura/header') . view('estructura/sidebar') . view('socios', $socios) . view('estructura/endbody');;
+        return view('estructura/header') . view('estructura/sidebar',$user).view('socios', $socios) . view('estructura/endbody');;
         }else{
         return view('estructura/header') . view('error');
     }
@@ -28,8 +35,14 @@ class Socios extends BaseController
     public function addSocio()
     {
         if($this->session->get('user')!= null){
-            
-        return view('estructura/header') . view('estructura/sidebar') . view('add_socio') . view('estructura/endbody');
+            $user=[
+                'nombre'=>$this->session->get('nombre'),
+                'apellido'=>$this->session->get('apellido'),
+                'rol'=>$this->session->get('rol'),
+                'user'=> $this->session->get('user'),
+                'documento'=>$this->session->get('documento'),
+                  ];
+        return view('estructura/header') . view('estructura/sidebar',$user) . view('add_socio') . view('estructura/endbody');
         }else{
         return view('estructura/header') . view('error');
     }
@@ -60,8 +73,14 @@ class Socios extends BaseController
         $SociosM = new SociosM();
         $socio = $SociosM->find($_GET['id_socio']);
         if($this->session->get('user')!= null){
-            
-        return view('estructura/header') . view('estructura/sidebar') . view('edit_socio', $socio) . view('estructura/endbody');
+            $user=[
+                'nombre'=>$this->session->get('nombre'),
+                'apellido'=>$this->session->get('apellido'),
+                'rol'=>$this->session->get('rol'),
+                'user'=> $this->session->get('user'),
+                'documento'=>$this->session->get('documento'),
+                  ];
+        return view('estructura/header') . view('estructura/sidebar',$user) . view('edit_socio', $socio) . view('estructura/endbody');
         }else{
         return view('estructura/header') . view('error');
     }
@@ -79,7 +98,7 @@ class Socios extends BaseController
             'celular' => $request->getPostGet('celular')
         );
 
-        if ($SociosM->update($request->getPostGet('Id_socio'), $socio) === false) {
+        if ($SociosM->update($request->getPostGet('Id_socio'), $socio) == false) {
             header("Location:" . base_url() . "/Socios?etd=false");
             exit();
         } else {
@@ -91,7 +110,7 @@ class Socios extends BaseController
     {
         $SociosM = new SociosM();
         $request = \Config\Services::request();
-        if ($SociosM->delete($request->getPostGet('Id_socio')) === false) {
+        if ($SociosM->delete($request->getPostGet('Id_socio')) == false) {
             header("Location:" . base_url() . "/Socios?etd=false");
             exit();
         } else {

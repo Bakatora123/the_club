@@ -26,23 +26,23 @@
                                             <?php echo form_label('Nombre') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'nombre', 'class' => 'form-control', 'type' => 'text', 'value'=>$nombre)); ?>
+                                            <?php echo form_input(array('name' => 'nombre', 'class' => 'form-control', 'type' => 'text', 'value'=>$nombre,'required'=>true )); ?>
                                         </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Apellido') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'apellido', 'class' => 'form-control', 'type' => 'text', 'value'=>$apellido)); ?> </div>
+                                            <?php echo form_input(array('name' => 'apellido', 'class' => 'form-control', 'type' => 'text', 'value'=>$apellido,'required'=>true)); ?> </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Documento') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'documento', 'class' => 'form-control', 'type' => 'number', 'value'=>$documento)); ?> </div>
+                                            <?php echo form_input(array('name' => 'documento', 'class' => 'form-control', 'type' => 'number', 'value'=>$documento,'required'=>true,'minlength'=>7,'maxlength'=>8)); ?> </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Celular') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'celular', 'class' => 'form-control', 'type' => 'number', 'value'=>$celular)); ?> </div>
+                                            <?php echo form_input(array('name' => 'celular', 'class' => 'form-control', 'type' => 'number', 'value'=>$celular,'required'=>true,'minlength'=>10,'maxlength'=>10)); ?> </div>
                                             <?php echo form_input(array('name' => 'Id_socio', 'type' => 'hidden', 'value'=>$Id_socio)); ?> 
                                         <div class="col-sm-12 d-flex justify-content-center mt-5">
                                             <?php echo form_submit(array('name' => 'Cargar', 'value' => 'Guardar', 'class' => 'btn btn-primary me-1 mb-1')); ?>

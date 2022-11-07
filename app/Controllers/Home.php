@@ -17,10 +17,13 @@ class Home extends BaseController
         if($this->session->get('user')!= null){
             $user=[
                 'nombre'=>$this->session->get('nombre'),
-                'apellido'=>$this->session->get('apellido')
-             ];
+                'apellido'=>$this->session->get('apellido'),
+                'rol'=>$this->session->get('rol'),
+                'user'=> $this->session->get('user'),
+                'documento'=>$this->session->get('documento'),
+                  ];
              
-        return view('estructura/header').view('estructura/sidebar').view('index',$user).view('estructura/endbody');
+        return view('estructura/header').view('estructura/sidebar',$user).view('index').view('estructura/endbody');
     }else{
         return view('estructura/header').view('error');
     }

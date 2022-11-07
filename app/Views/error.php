@@ -8,7 +8,7 @@
                 <div class="text-center">
                     <h1 class="error-title">Error de Session</h1>
                     <p class="fs-5 text-gray-600"></p>
-                    <a href="<?php echo base_url(); ?>/Login" class="btn btn-lg btn-outline-primary mt-3">Iniciar Seccion</a>
+                    <a href="<?php echo base_url(); ?>/" class="btn btn-lg btn-outline-primary mt-3">Iniciar Seccion</a>
                 </div>
             </div>
         </div>

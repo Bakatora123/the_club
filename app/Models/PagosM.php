@@ -14,7 +14,7 @@ class PagosM extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['doc_encargado', 'doc_socio','monto','fecha'];
+    protected $allowedFields = ['id_usuarioFK', 'id_socioFK','monto','fecha','nombre_encargado','nombre_socio'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

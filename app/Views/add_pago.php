@@ -28,45 +28,48 @@
                                         <div class="col-md-5 form-group">
                                             <?php
                                             if ($rol == 2) {
-                                                echo form_input(array('name' => 'doc_encargado', 'class' => 'form-control', 'type' => 'text', 'placeholder' => $nombre, 'readonly' => 'readonly'));
+                                                echo form_input(array('name' => 'id_encargadoFK', 'value' => $id_usuario, 'type' => 'hidden'));
+                                                echo form_input(array('class' => 'form-control', 'type' => 'text', 'placeholder' => $nombre, 'readonly' => 'readonly'));
                                             } else {
                                             ?>
-                                               <select class="form-select">
-                                                <?php
-                                                foreach ($options as $option) {
-                                                  ?>
+                                                <select class="form-select" name="id_encargadoFK" required>
+                                                    <option value="" selected>......</option>
+                                                    <?php
+                                                    foreach ($options as $option) {
+                                                    ?>
 
-                                                  <option value="<?php echo $option['documento']?>"><?php echo $option['nombre']?></option>
-                                                  
-                                            <?php
-                                                
-                                            }
-                                            echo "</select>";
-                                        }
-                                            ?>
+                                                        <option value="<?php echo $option['id_usuario'] ?>"> <?php echo $option['nombre'] ?></option>
+
+                                                <?php
+
+                                                    }
+                                                    echo "</select>";
+                                                }
+                                                ?>
 
                                         </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Socio') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                        <select class="form-select">
+                                            <select class="form-select" name="SocioFK" required>
+                                                <option value="" selected>......</option>
                                                 <?php
                                                 foreach ($socios as $socio) { ?>
-                                                  <option value="<?php echo $socio['documento']?>"><?php echo $socio['nombre']?></option>                                                  
+                                                    <option value="<?php echo $socio['Id_socio'] ?>"><?php echo $socio['nombre'] ?></option>
                                                 <?php } ?>
-                                        </select>
+                                            </select>
                                         </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Monto') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'monto', 'class' => 'form-control', 'type' => 'number')); ?> </div>
+                                            <?php echo form_input(array('name' => 'monto', 'class' => 'form-control', 'type' => 'number','required'=>true)); ?> </div>
                                         <div class="col-md-6">
                                             <?php echo form_label('Fecha') ?>
                                         </div>
                                         <div class="col-md-5 form-group">
-                                            <?php echo form_input(array('name' => 'fecha', 'class' => 'form-control', 'type' => 'date')); ?> </div>
+                                            <?php echo form_input(array('name' => 'fecha', 'class' => 'form-control', 'type' => 'date','required'=>true)); ?> </div>
 
                                         <div class="col-sm-12 d-flex justify-content-center mt-5">
                                             <?php echo form_submit(array('name' => 'Cargar', 'value' => 'Cargar', 'class' => 'btn btn-primary me-1 mb-1')); ?>

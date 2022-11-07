@@ -5,6 +5,7 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
+                    <?php session() ?>
                     <div class="auth-logo">
                         <img src="<?php echo base_url();?>/public/logo/logo-cam.png" alt="Logo">
                     </div>
@@ -36,8 +37,27 @@
                 </div>
             </div>
         </div>
-
+       
     </div>
+    <?php
+    if (isset($_GET['est'])) {
+    if ($_GET['est'] == true) { ?>
+        <script type="text/javascript">
+            window.onload = function alerta() {
+                Swal.fire({
+  position: 'center',
+  icon: 'error',
+  title: 'Usuario o Contraseña incorrecta',
+  showConfirmButton: false,
+  timer: 2000
+})
+                setTimeout(function() {
+                    window.location.href = "<?php echo base_url(); ?>/";
+                }, 2100);
+            };
+        </script>
+<?php }
+} ?>
 </body>
 
 </html>

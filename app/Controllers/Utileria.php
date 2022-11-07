@@ -17,8 +17,14 @@ class Utileria extends BaseController
         $articulos = $UtileriaM->findAll();
         $articulos = array('articulos' => $articulos);
  if($this->session->get('user')!= null){
-            
-        return view('estructura/header') . view('estructura/sidebar') . view('utileria', $articulos) . view('estructura/endbody');
+    $user=[
+        'nombre'=>$this->session->get('nombre'),
+        'apellido'=>$this->session->get('apellido'),
+        'rol'=>$this->session->get('rol'),
+        'user'=> $this->session->get('user'),
+        'documento'=>$this->session->get('documento'),
+          ];
+        return view('estructura/header') . view('estructura/sidebar',$user) . view('utileria', $articulos) . view('estructura/endbody');
 }else{
         return view('estructura/header') . view('error');
     }
@@ -35,8 +41,14 @@ class Utileria extends BaseController
         ];
         $options = array('options' => $options);
  if($this->session->get('user')!= null){
-            
-        return view('estructura/header') . view('estructura/sidebar') . view('add_articulo', $options) . view('estructura/endbody');
+    $user=[
+        'nombre'=>$this->session->get('nombre'),
+        'apellido'=>$this->session->get('apellido'),
+        'rol'=>$this->session->get('rol'),
+        'user'=> $this->session->get('user'),
+        'documento'=>$this->session->get('documento'),
+          ];   
+        return view('estructura/header') . view('estructura/sidebar',$user) . view('add_articulo', $options) . view('estructura/endbody');
        }else{
         return view('estructura/header') . view('error');
     }
@@ -85,8 +97,14 @@ class Utileria extends BaseController
         );
 
  if($this->session->get('user')!= null){
-            
-        return view('estructura/header') . view('estructura/sidebar') . view('edit_articulo', $medios) . view('estructura/endbody');
+    $user=[
+        'nombre'=>$this->session->get('nombre'),
+        'apellido'=>$this->session->get('apellido'),
+        'rol'=>$this->session->get('rol'),
+        'user'=> $this->session->get('user'),
+        'documento'=>$this->session->get('documento'),
+          ];
+        return view('estructura/header') . view('estructura/sidebar',$user) . view('edit_articulo', $medios) . view('estructura/endbody');
         }else{
         return view('estructura/header') . view('error');
     }

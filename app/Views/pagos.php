@@ -10,7 +10,7 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <p class="card-title">Lista de Pagos</p>
-                            <?php if($usuario['rol']==2){ ?>
+                            <?php if($usuario['rol']==4 || $usuario['rol']==5 || $usuario['rol']==1 ){ ?>
                             <a href="<?php echo base_url(); ?>/Pagos/addPago" class="btn btn-primary">Agregar Pago</a>
                             <?php }?>
                         </div>
@@ -29,14 +29,14 @@
                                 <tbody>
                                 <?php foreach ($pagos as $pago) { ?>
                                 <tr>
-                                   
-                                    <td><?php echo $pago['doc_encargado']; ?></td>
-                                    <td><?php echo $pago['doc_socio']; ?></td>
+                                    <td><?php echo $pago['nombre_encargado'];?></td>
+                                    <td><?php echo $pago['nombre_socio']; ?></td>
                                     <td><?php echo $pago['monto']; ?></td>
                                     <td><?php echo $pago['fecha']; ?></td>
                                     <td>
 
                                         <?php
+
                                         echo form_open('/Pagos/delete');
                                         echo form_input(array('name' => 'id_pago', 'type' => 'hidden', 'value' => $pago['id_pago']));
                                         //echo form_submit(array('name' => 'Cargar', 'value' => 'Eliminar', 'class' => 'badge bg-success', 'onclick' => 'return confirm()'));
@@ -45,7 +45,9 @@
                                         <?php
                                         echo form_close();
                                         ?>
+                                         <?php if($usuario['rol']==1 || $usuario['rol']==2 ){ ?>
                                         <a href="<?php echo base_url(); ?>/Pagos/editPago?id_pago=<?php echo $pago['id_pago']; ?>" class="badge bg-success">Modificar</span>
+                                        <?php }?>
                                     </td>
                                 </tr>
                             <?php } ?>

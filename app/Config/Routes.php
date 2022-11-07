@@ -38,7 +38,7 @@ $routes->set404Override();
 
 
 //login
-$routes->get('/Login', 'Login::index');
+$routes->get('/', 'Login::index');
 $routes->post('/Login/aute','Login::aute');
 $routes->get('/Login/cerrar','Login::cerrar');
 

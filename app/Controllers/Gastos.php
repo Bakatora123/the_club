@@ -17,19 +17,20 @@ class Gastos extends BaseController
     public function index()
     {
         //session datos
-        $log=[
-            'rol'=>$this->session->get('rol'),
+        $user=[
             'nombre'=>$this->session->get('nombre'),
             'apellido'=>$this->session->get('apellido'),
-            'usuario'=>$this->session->get('usuario')
-        ];
+            'rol'=>$this->session->get('rol'),
+            'user'=> $this->session->get('user'),
+            'documento'=>$this->session->get('documento'),
+              ];
         //Fin datos session
         $GastosM = new GastosM();
         $Gastos = $GastosM->findAll();
         $Gastos = array('Gastos' => $Gastos);
  if($this->session->get('user')!= null){
            
-        return view('estructura/header').view('estructura/sidebar', $log).view('gastos',$Gastos).view('estructura/endbody');
+        return view('estructura/header').view('estructura/sidebar', $user).view('gastos',$Gastos).view('estructura/endbody');
     }else{
         return view('estructura/header') . view('error');
     }
@@ -38,17 +39,18 @@ class Gastos extends BaseController
     public function addGasto()
     {
         //session datos
-        $log=[
-            'rol'=>$this->session->get('rol'),
+        $user=[
             'nombre'=>$this->session->get('nombre'),
             'apellido'=>$this->session->get('apellido'),
-            'usuario'=>$this->session->get('usuario')
-        ];
+            'rol'=>$this->session->get('rol'),
+            'user'=> $this->session->get('user'),
+            'documento'=>$this->session->get('documento'),
+              ];
         //Fin datos session
 
          if($this->session->get('user')!= null){
            
-        return view('estructura/header').view('estructura/sidebar',$log).view('add_gasto').view('estructura/endbody');
+        return view('estructura/header').view('estructura/sidebar',$user).view('add_gasto').view('estructura/endbody');
     }else{
         return view('estructura/header') . view('error');
     }
@@ -74,19 +76,20 @@ class Gastos extends BaseController
     public function editGasto()
     {
        //session datos
-       $log=[
-        'rol'=>$this->session->get('rol'),
+       $user=[
         'nombre'=>$this->session->get('nombre'),
         'apellido'=>$this->session->get('apellido'),
-        'usuario'=>$this->session->get('usuario')
-    ];
+        'rol'=>$this->session->get('rol'),
+        'user'=> $this->session->get('user'),
+        'documento'=>$this->session->get('documento'),
+          ];
     //Fin datos session
 
         $GastosM = new GastosM();
         $gasto = $GastosM->find($_GET['id_gasto']);
  if($this->session->get('user')!= null){
            
-        return view('estructura/header') . view('estructura/sidebar',$log) . view('edit_gasto', $gasto) . view('estructura/endbody');
+        return view('estructura/header') . view('estructura/sidebar',$user) . view('edit_gasto', $gasto) . view('estructura/endbody');
     }else{
         return view('estructura/header') . view('error');
     }

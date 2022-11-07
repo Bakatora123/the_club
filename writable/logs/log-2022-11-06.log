@@ -1,0 +1,358 @@
+CRITICAL - 2022-11-06 15:07:25 --> Undefined index: doc_encargado
+in APPPATH\Views\edit_pago.php on line 29.
+ 1 APPPATH\Views\edit_pago.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: doc_encargado', 'APPPATH\\Views\\edit_pago.php', 29, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 15:12:18 --> Undefined index: doc_socio
+in APPPATH\Views\edit_pago.php on line 35.
+ 1 APPPATH\Views\edit_pago.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: doc_socio', 'APPPATH\\Views\\edit_pago.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 15:47:04 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 58.
+ 1 APPPATH\Views\edit_pago.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(131): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:24:05 --> Trying to get property 'Id_socio' of non-object
+in APPPATH\Views\edit_pago.php on line 58.
+ 1 APPPATH\Views\edit_pago.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'Id_socio\' of non-object', 'APPPATH\\Views\\edit_pago.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(131): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:24:42 --> Trying to get property 'Id_socio' of non-object
+in APPPATH\Views\edit_pago.php on line 58.
+ 1 APPPATH\Views\edit_pago.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'Id_socio\' of non-object', 'APPPATH\\Views\\edit_pago.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(131): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:25:04 --> Trying to get property 'Id_socio' of non-object
+in APPPATH\Views\edit_pago.php on line 58.
+ 1 APPPATH\Views\edit_pago.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'Id_socio\' of non-object', 'APPPATH\\Views\\edit_pago.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(131): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:31:16 --> Illegal offset type
+in APPPATH\Controllers\Pagos.php on line 127.
+ 1 APPPATH\Controllers\Pagos.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'APPPATH\\Controllers\\Pagos.php', 127, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:31:44 --> Illegal offset type
+in APPPATH\Controllers\Pagos.php on line 127.
+ 1 APPPATH\Controllers\Pagos.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'APPPATH\\Controllers\\Pagos.php', 127, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:32:16 --> Illegal offset type
+in APPPATH\Controllers\Pagos.php on line 127.
+ 1 APPPATH\Controllers\Pagos.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'APPPATH\\Controllers\\Pagos.php', 127, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:32:47 --> Illegal offset type
+in APPPATH\Controllers\Pagos.php on line 127.
+ 1 APPPATH\Controllers\Pagos.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'APPPATH\\Controllers\\Pagos.php', 127, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:33:06 --> Illegal offset type
+in APPPATH\Controllers\Pagos.php on line 127.
+ 1 APPPATH\Controllers\Pagos.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'APPPATH\\Controllers\\Pagos.php', 127, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:37:20 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 64.
+ 1 APPPATH\Views\edit_pago.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 64, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:44:52 --> Undefined variable: socio
+in APPPATH\Views\edit_pago.php on line 58.
+ 1 APPPATH\Views\edit_pago.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: socio', 'APPPATH\\Views\\edit_pago.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:44:59 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 58.
+ 1 APPPATH\Views\edit_pago.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:48:50 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 67.
+ 1 APPPATH\Views\edit_pago.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 67, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:49:16 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+in APPPATH\Views\edit_pago.php on line 67.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 3 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:49:23 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 67.
+ 1 APPPATH\Views\edit_pago.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 67, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:49:50 --> Undefined index: 
+in APPPATH\Views\edit_pago.php on line 67.
+ 1 APPPATH\Views\edit_pago.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ', 'APPPATH\\Views\\edit_pago.php', 67, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:52:12 --> Undefined variable: socio
+in APPPATH\Views\edit_pago.php on line 61.
+ 1 APPPATH\Views\edit_pago.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: socio', 'APPPATH\\Views\\edit_pago.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:52:19 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 61.
+ 1 APPPATH\Views\edit_pago.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(132): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:56:59 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 61.
+ 1 APPPATH\Views\edit_pago.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(133): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:57:09 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 63.
+ 1 APPPATH\Views\edit_pago.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(133): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 16:57:26 --> Undefined index: Id_socio
+in APPPATH\Views\edit_pago.php on line 63.
+ 1 APPPATH\Views\edit_pago.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Id_socio', 'APPPATH\\Views\\edit_pago.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\edit_pago.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('edit_pago', [], true)
+ 5 APPPATH\Controllers\Pagos.php(133): view('edit_pago', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Pagos->editPagos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:02:01 --> Undefined variable: rol
+in APPPATH\Views\estructura\sidebar.php on line 23.
+ 1 APPPATH\Views\estructura\sidebar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rol', 'APPPATH\\Views\\estructura\\sidebar.php', 23, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estructura\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('estructura/sidebar', [], true)
+ 5 APPPATH\Controllers\Socios.php(22): view('estructura/sidebar')
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Socios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Socios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:26:15 --> Call to undefined method CodeIgniter\Validation\Validation::runRules()
+in APPPATH\Controllers\Login.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:27:13 --> Call to undefined method CodeIgniter\Validation\Validation::runRules()
+in APPPATH\Controllers\Login.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:28:08 --> requires is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('requires')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('pass', 'pass', 'C:\\wamp64\\www\\The_Club', [...], [...])
+ 3 APPPATH\Controllers\Login.php(28): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:30:59 --> password is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('password')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('pass', 'pass', 'asdasdasdasd', [...], [...])
+ 3 APPPATH\Controllers\Login.php(28): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:41:44 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:43:20 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:43:21 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:43:23 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:43:41 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:43:58 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:44:07 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Views\login.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Login.php(18): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:44:11 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Views\login.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Login.php(18): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:44:16 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Views\login.php on line 8.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Login.php(18): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:44:29 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-06 19:45:04 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$back
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\HTTP\\RedirectResponse::$back', 'APPPATH\\Controllers\\Login.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Login->aute()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -18,8 +18,14 @@ class Ingresos extends BaseController
         $ingresos = $ingresosM->findAll();
         $ingresos = array('ingresos'=>$ingresos);
         if($this->session->get('user')!= null){
-           
-        return view('estructura/header').view('estructura/sidebar').view('ingresos',$ingresos).view('estructura/endbody');
+            $user=[
+                'nombre'=>$this->session->get('nombre'),
+                'apellido'=>$this->session->get('apellido'),
+                'rol'=>$this->session->get('rol'),
+                'user'=> $this->session->get('user'),
+                'documento'=>$this->session->get('documento'),
+                  ];
+        return view('estructura/header').view('estructura/sidebar',$user).view('ingresos',$ingresos).view('estructura/endbody');
         }else{
             return view('estructura/header').view('error');
         }
@@ -28,8 +34,14 @@ class Ingresos extends BaseController
     public function addIngreso()
     {
         if($this->session->get('user')!= null){
-            
-        return view('estructura/header').view('estructura/sidebar').view('add_ingreso').view('estructura/endbody');
+            $user=[
+                'nombre'=>$this->session->get('nombre'),
+                'apellido'=>$this->session->get('apellido'),
+                'rol'=>$this->session->get('rol'),
+                'user'=> $this->session->get('user'),
+                'documento'=>$this->session->get('documento'),
+                  ];
+        return view('estructura/header').view('estructura/sidebar',$user).view('add_ingreso').view('estructura/endbody');
     }else{
         return view('estructura/header').view('error');
     }
@@ -57,8 +69,14 @@ class Ingresos extends BaseController
         $ingresosM= new IngresosM();
         $ingreso= $ingresosM->find($_GET['id_ingreso']);
         if($this->session->get('user')!= null){
-            
-        return view('estructura/header').view('estructura/sidebar').view('edit_ingreso',$ingreso).view('estructura/endbody');
+            $user=[
+                'nombre'=>$this->session->get('nombre'),
+                'apellido'=>$this->session->get('apellido'),
+                'rol'=>$this->session->get('rol'),
+                'user'=> $this->session->get('user'),
+                'documento'=>$this->session->get('documento'),
+                ]; 
+        return view('estructura/header').view('estructura/sidebar',$user).view('edit_ingreso',$ingreso).view('estructura/endbody');
         }
     }
     public function edit()

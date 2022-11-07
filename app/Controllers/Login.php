@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UsuariosM;
+use Config\Validation;
 
 class Login extends BaseController
 {
@@ -18,6 +19,20 @@ class Login extends BaseController
     }
     public function aute()
     {
+        //    $validated = service('validation');
+        //    $validated->setRules([
+        //     'name' => 'required',
+        //     'pass' => 'required'
+        //    ]);
+
+        //   if(!$validated->withRequest($this->request)->run()){
+        //        return redirect()->back->withInput()->with('errors',$validated->getErrors());
+
+        //   };
+        //   exit();
+
+
+
         $UsuariosM = new UsuariosM;
         $request = \Config\Services::request();
         $login = array(
@@ -34,17 +49,17 @@ class Login extends BaseController
         if ($UsuariosM->where($buscar)->first() == true) {
             $login =  $UsuariosM->where($buscar)->first();
             $this->session->set($login);
-            header("Location:" . base_url() . "/Home");
+            header("Location:".base_url()."/Home");
             exit();
         } else {
-            header("Location:" . base_url() . "/Login");
+            header("Location:".base_url()."/?est=false");
             exit();
         }
     }
     public function cerrar()
     {
         $this->session->destroy();
-        header("Location:" . base_url() . "/Login?est=true");
+        header("Location:".base_url()."/");
         exit();
     }
 }

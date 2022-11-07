@@ -22,7 +22,12 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>/dist/assets/css/pages/error.css">
     <link rel="shortcut icon" href="<?php echo base_url(); ?>/dist/assets/images/favicon.svg" type="image/x-icon">
     
+<style>
+body{
+    background: yellowgreen;
+}
 
+</style>
 </head>
 
 
